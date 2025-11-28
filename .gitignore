@@ -67,7 +67,7 @@ predictions/
 *.jpeg
 *.gif
 *.svg
-*.pdf
+
 
 # ============================================================================
 # PYTHON - Standard Python gitignore
