@@ -20,18 +20,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from datetime import datetime
 import os
-import warnings
-warnings.filterwarnings('ignore')
 
 # Set style
 plt.style.use('seaborn-v0_8-darkgrid')
 sns.set_palette("husl")
 
-print("="*80)
 print("MILESTONE 2 - TASK 2.3: ADVANCED VISUALIZATIONS")
-print("="*80)
 
 # Load data and create output directory
 train = pd.read_csv('outputs/enhanced_features/train_enhanced.csv')

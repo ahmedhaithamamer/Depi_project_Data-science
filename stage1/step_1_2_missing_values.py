@@ -62,9 +62,7 @@ def display_statistics(df, dataset_name):
         non_zero_pct = (non_zero_count / len(df)) * 100
 
 
-print("="*80)
 print("STEP 1.2: HANDLING MISSING VALUES")
-print("="*80)
 
 print("\n[1] Loading datasets...")
 train = pd.read_csv('processed_data/Stage1.1/train_merged.csv')
@@ -89,7 +87,5 @@ train_clean.to_csv(train_output, index=False)
 test_clean.to_csv(test_output, index=False)
 print(f"Saved: {train_output}, {test_output}")
 
-print("\n" + "="*80)
-print(" STEP 1.2 COMPLETED!")
-print("="*80)
+print("\nSTEP 1.2 COMPLETED!")
 

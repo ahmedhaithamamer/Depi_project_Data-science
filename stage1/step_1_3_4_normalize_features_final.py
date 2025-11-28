@@ -13,9 +13,7 @@ import numpy as np
 import os
 import json
 
-print("="*80)
 print("STEP 1.3.4: NORMALIZE NUMERICAL FEATURES")
-print("="*80)
 
 print("\n[1] Loading encoded data...")
 train = pd.read_csv('processed_data/Stage1.3.3/train_encoded.csv')
@@ -72,6 +70,4 @@ train.to_csv(train_output, index=False)
 test.to_csv(test_output, index=False)
 print(f"Saved: {train_output}, {test_output}, {params_path}")
 
-print("\n" + "="*80)
-print("STEP 1.3.4 COMPLETED!")
-print("="*80)
+print("\nSTEP 1.3.4 COMPLETED!")

@@ -14,18 +14,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from datetime import datetime
-import warnings
 import os
-warnings.filterwarnings('ignore')
+
 
 sns.set_style("whitegrid")
 sns.set_palette("husl")
 plt.rcParams['figure.figsize'] = (14, 6)
 
-print("="*80)
 print("STEP 1.4: EXPLORATORY DATA ANALYSIS (EDA)")
-print("="*80)
 
 print("\n[1] Loading data...")
 train = pd.read_csv('processed_data/Stage1.2/train_cleaned_step2.csv')
@@ -224,6 +220,4 @@ plt.close()
 
 print("Created 10 visualization files")
 
-print("\n" + "="*80)
-print("EXPLORATORY DATA ANALYSIS COMPLETED!")
-print("="*80)
+print("\nEXPLORATORY DATA ANALYSIS COMPLETED!")

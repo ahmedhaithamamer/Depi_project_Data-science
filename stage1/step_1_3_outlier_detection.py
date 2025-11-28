@@ -18,9 +18,7 @@ import os
 sns.set_style("whitegrid")
 plt.rcParams['figure.figsize'] = (12, 6)
 
-print("="*80)
 print("STEP 1.3: OUTLIER DETECTION & ANALYSIS")
-print("="*80)
 
 print("\n[1] Loading cleaned data...")
 train = pd.read_csv('processed_data/Stage1.2/train_cleaned_step2.csv')
@@ -96,6 +94,4 @@ print("Saved 4 visualization files")
 
 print("\n[4] Decision: Keep all outliers (valid business scenarios)")
 
-print("\n" + "="*80)
-print("STEP 1.3 COMPLETED!")
-print("="*80)
+print("\nSTEP 1.3 COMPLETED!")

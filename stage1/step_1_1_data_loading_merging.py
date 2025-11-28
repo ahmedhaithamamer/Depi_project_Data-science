@@ -9,9 +9,8 @@ import pandas as pd
 import numpy as np
 import os
 
-print("="*80)
+
 print("STEP 1.1: DATA LOADING & MERGING")
-print("="*80)
 
 # Define file paths (relative to stage1/ directory)
 BASE_PATH = '../datasets/walmart-recruiting-store-sales-forecasting/'
@@ -47,7 +46,5 @@ train_full.to_csv(train_output, index=False)
 test_full.to_csv(test_output, index=False)
 print(f"Saved: {train_output}, {test_output}")
 
-print("\n" + "="*80)
-print("STEP 1.1 COMPLETED!")
-print("="*80)
+print("\nSTEP 1.1 COMPLETED!")
 

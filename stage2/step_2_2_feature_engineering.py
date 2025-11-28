@@ -18,15 +18,10 @@ Output: outputs/enhanced_features/
 
 import pandas as pd
 import numpy as np
-from datetime import datetime, timedelta
 import json
 import os
-import warnings
-warnings.filterwarnings('ignore')
 
-print("="*80)
 print("MILESTONE 2 - TASK 2.2: ENHANCED FEATURE ENGINEERING")
-print("="*80)
 
 # Load and prepare data
 train = pd.read_csv('../stage1/processed_data/Stage1.3.4_Final/train_final.csv')
@@ -225,7 +220,5 @@ feature_summary = {
 with open('outputs/enhanced_features/feature_summary.json', 'w') as f:
     json.dump(feature_summary, f, indent=4, default=str)
 
-print("\n" + "="*80)
-print(f"TASK 2.2 COMPLETE - Enhanced Feature Engineering ({train.shape[1]} features)")
-print("="*80)
+print(f"\nTASK 2.2 COMPLETE - Enhanced Feature Engineering ({train.shape[1]} features)")
 
