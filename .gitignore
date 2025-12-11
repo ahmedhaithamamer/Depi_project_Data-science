@@ -11,7 +11,7 @@
 # Excel files
 *.xlsx
 *.xls
-
+*.csv
 # Pickle files (exclude all except the specific model)
 *.pkl
 *.pickle

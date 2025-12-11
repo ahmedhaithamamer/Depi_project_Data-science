@@ -6,18 +6,17 @@ This script runs all Stage 2 tasks sequentially:
 2. Enhanced Feature Engineering (42 additional features)
 3. Advanced Visualizations (10 professional plots)
 
-Can be run from either the project root or the stage2/ directory.
+IMPORTANT: Must be run from the project root directory.
 
-Input:  ../stage1/processed_data/Stage1.3.4_Final/train_final.csv & test_final.csv
-Output: outputs/ (analysis_results, enhanced_features, visualizations)
+Input:  stage1/processed_data/Stage1.3.4_Final/train_final.csv & test_final.csv
+Output: stage2/outputs/ (analysis_results, enhanced_features, visualizations)
 """
 
 import os
 import sys
 
-# Get the directory where this script is located
-script_dir = os.path.dirname(os.path.abspath(__file__))
-os.chdir(script_dir)  # Change to script directory to ensure correct paths
+# Get the stage2 directory path
+stage2_dir = os.path.dirname(os.path.abspath(__file__))
 
 print("STAGE 2 PIPELINE - ADVANCED ANALYSIS & FEATURE ENGINEERING")
 print("\nPipeline Flow:")
@@ -26,9 +25,9 @@ print("  -> [2.3] -> Advanced Visualizations\n")
 
 # Task 2.1: Advanced Data Analysis
 print("[1/3] TASK 2.1: ADVANCED DATA ANALYSIS")
-print("Input:  ../stage1/processed_data/Stage1.3.4_Final/train_final.csv")
-print("Output: outputs/analysis_results/ & visualizations/")
-exit_code = os.system(f"{sys.executable} step_2_1_advanced_analysis.py")
+print("Input:  stage1/processed_data/Stage1.3.4_Final/train_final.csv")
+print("Output: stage2/outputs/analysis_results/ & visualizations/")
+exit_code = os.system(f"{sys.executable} {os.path.join(stage2_dir, 'step_2_1_advanced_analysis.py')}")
 if exit_code != 0:
     print(f"\nERROR: Step 2.1 failed with exit code {exit_code}")
     sys.exit(1)
@@ -37,9 +36,9 @@ print("Visualizations: time series decomposition, correlation heatmap, holiday i
 
 # Task 2.2: Enhanced Feature Engineering
 print("[2/3] TASK 2.2: ENHANCED FEATURE ENGINEERING")
-print("Input:  ../stage1/processed_data/Stage1.3.4_Final/")
-print("Output: outputs/enhanced_features/")
-exit_code = os.system(f"{sys.executable} step_2_2_feature_engineering.py")
+print("Input:  stage1/processed_data/Stage1.3.4_Final/")
+print("Output: stage2/outputs/enhanced_features/")
+exit_code = os.system(f"{sys.executable} {os.path.join(stage2_dir, 'step_2_2_feature_engineering.py')}")
 if exit_code != 0:
     print(f"\nERROR: Step 2.2 failed with exit code {exit_code}")
     sys.exit(1)
@@ -49,9 +48,9 @@ print("Output: feature_summary.json\n")
 
 # Task 2.3: Advanced Visualizations
 print("[3/3] TASK 2.3: ADVANCED VISUALIZATIONS")
-print("Input:  outputs/enhanced_features/train_enhanced.csv")
-print("Output: outputs/visualizations/")
-exit_code = os.system(f"{sys.executable} step_2_3_advanced_visualizations.py")
+print("Input:  stage2/outputs/enhanced_features/train_enhanced.csv")
+print("Output: stage2/outputs/visualizations/")
+exit_code = os.system(f"{sys.executable} {os.path.join(stage2_dir, 'step_2_3_advanced_visualizations.py')}")
 if exit_code != 0:
     print(f"\nERROR: Step 2.3 failed with exit code {exit_code}")
     sys.exit(1)
@@ -60,7 +59,7 @@ print("Output: 10 advanced visualizations created\n")
 # Final summary
 print("STAGE 2 PIPELINE COMPLETED SUCCESSFULLY!")
 print("\nAnalysis Outputs:")
-print("  outputs/")
+print("  stage2/outputs/")
 print("     |- analysis_results/")
 print("     |  |- adf_test_results.json")
 print("     |  |- correlation_matrix.csv")

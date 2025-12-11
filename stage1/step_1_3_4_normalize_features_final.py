@@ -16,8 +16,8 @@ import json
 print("STEP 1.3.4: NORMALIZE NUMERICAL FEATURES")
 
 print("\n[1] Loading encoded data...")
-train = pd.read_csv('processed_data/Stage1.3.3/train_encoded.csv')
-test = pd.read_csv('processed_data/Stage1.3.3/test_encoded.csv')
+train = pd.read_csv('stage1/processed_data/Stage1.3.3/train_encoded.csv')
+test = pd.read_csv('stage1/processed_data/Stage1.3.3/test_encoded.csv')
 print(f"Loaded: train {train.shape}, test {test.shape}")
 
 continuous_features = [
@@ -57,7 +57,7 @@ for feature in continuous_features:
 print("Normalized train and test data")
 
 print("\n[4] Saving normalization parameters and data...")
-output_dir = 'processed_data/Stage1.3.4_Final'
+output_dir = 'stage1/processed_data/Stage1.3.4_Final'
 os.makedirs(output_dir, exist_ok=True)
 
 params_path = os.path.join(output_dir, 'normalization_params.json')

@@ -12,8 +12,8 @@ import os
 
 print("STEP 1.1: DATA LOADING & MERGING")
 
-# Define file paths (relative to stage1/ directory)
-BASE_PATH = '../datasets/walmart-recruiting-store-sales-forecasting/'
+# Define file paths (relative to project root directory)
+BASE_PATH = 'stage1/datasets/walmart-recruiting-store-sales-forecasting/'
 TRAIN_PATH = os.path.join(BASE_PATH, 'train.csv')
 TEST_PATH = os.path.join(BASE_PATH, 'test.csv')
 STORES_PATH = os.path.join(BASE_PATH, 'stores.csv')
@@ -38,7 +38,7 @@ test_full = test_full.merge(features, on=['Store', 'Date', 'IsHoliday'], how='le
 print(f"Merged: train_full {train_full.shape}, test_full {test_full.shape}")
 
 print("\n[3] Saving merged datasets...")
-output_dir = 'processed_data/Stage1.1'
+output_dir = 'stage1/processed_data/Stage1.1'
 os.makedirs(output_dir, exist_ok=True)
 train_output = os.path.join(output_dir, 'train_merged.csv')
 test_output = os.path.join(output_dir, 'test_merged.csv')
