@@ -48,6 +48,12 @@ This project develops a machine learning system to forecast weekly sales for Wal
 - **Top Feature**: DayOfWeek_Sin (22.71% importance)
 - **Deployment**: Docker-ready with FastAPI + Streamlit
 
+![Time Series Decomposition](stage2/outputs/visualizations/01_time_series_decomposition.png)
+*Time series decomposition showing trend, seasonality, and residuals*
+
+![Correlation Heatmap](stage2/outputs/visualizations/02_correlation_heatmap.png)
+*Feature correlation heatmap highlighting key relationships*
+
 ---
 
 ## Dataset Summary
@@ -86,6 +92,12 @@ This project develops a machine learning system to forecast weekly sales for Wal
 - EDA Report: `stage1/Milestone_1_Deliverables/EDA-REPORT/EDA_REPORT.md`
 - Interactive Notebook: `stage1/Milestone_1_Deliverables/EDA_Analysis_notebook/EDA_Analysis.ipynb`
 
+![Overall Sales Trend](stage1/visualizations/Stage1.4/01_overall_sales_trend.png)
+*Overall sales trend over the entire dataset period*
+
+![Sales by Year](stage1/visualizations/Stage1.4/02_sales_by_year.png)
+*Year-over-year sales comparison*
+
 ### ✅ Milestone 2: Advanced Analysis & Enhanced Features (COMPLETE)
 
 **Completed:**
@@ -100,6 +112,12 @@ This project develops a machine learning system to forecast weekly sales for Wal
 - Enhanced Dataset: `stage2/outputs/enhanced_features/train_enhanced.csv` (91 features)
 - Analysis Notebook: `stage2/Milestone_2_Deliverables/Milestone_2_EnhancedVisualizations_and_Analysis.ipynb`
 - Visualization Gallery: `stage2/outputs/visualizations/` (10 professional plots)
+
+![Historical Trends EMA](stage2/outputs/visualizations/04_historical_trends_ema.png)
+*Historical trends with exponential moving averages*
+
+![Comprehensive Dashboard](stage2/outputs/visualizations/10_comprehensive_dashboard.png)
+*Comprehensive analytical dashboard*
 
 ### ✅ Milestone 3: Model Development & Training (COMPLETE)
 
@@ -167,11 +185,23 @@ This project develops a machine learning system to forecast weekly sales for Wal
 - November and December are peak months
 - Models must capture seasonal patterns
 
+![Monthly Seasonality](stage1/visualizations/Stage1.4/03_monthly_seasonality.png)
+*Monthly sales patterns showing clear Q4 peak*
+
+![Seasonal Patterns](stage2/outputs/visualizations/05_seasonal_patterns.png)
+*Advanced seasonal analysis with cyclical patterns*
+
 ### Holiday Impact
 
 - **+11.6% sales lift** during holiday weeks
 - Consistent across all store types
 - IsHoliday is a strong predictor
+
+![Holiday Impact](stage1/visualizations/Stage1.4/05_holiday_impact.png)
+*Sales comparison between holiday and non-holiday weeks*
+
+![Holiday Impact Analysis](stage2/outputs/visualizations/03_holiday_impact.png)
+*Detailed holiday impact analysis across store types*
 
 ### Promotion Effectiveness
 
@@ -180,6 +210,12 @@ This project develops a machine learning system to forecast weekly sales for Wal
 - MarkDown1: +18.9% lift (second best)
 - Promotion features are valuable predictors
 
+![Promotion Impact](stage1/visualizations/Stage1.4/07_promotion_impact.png)
+*Impact of different promotional markdowns on sales*
+
+![Promotional Effectiveness](stage2/outputs/visualizations/08_promotional_effectiveness.png)
+*Comprehensive analysis of promotional effectiveness*
+
 ### Store Types
 
 - **Type A (Large)**: 55% of sales, highest variance
@@ -187,16 +223,34 @@ This project develops a machine learning system to forecast weekly sales for Wal
 - **Type C (Small)**: 15% of sales, most consistent
 - Store type segmentation is critical
 
+![Store Type Comparison](stage1/visualizations/Stage1.4/06_store_type_comparison.png)
+*Sales distribution across different store types*
+
+![Store Type Performance](stage2/outputs/visualizations/06_store_type_performance.png)
+*Performance metrics by store type*
+
 ### External Factors
 
 - **Unemployment**: Strongest correlation (-0.128)
 - Temperature, Fuel Price: Minimal impact
 - CPI: Moderate correlation
 
+![External Factors Correlation](stage1/visualizations/Stage1.4/08_external_factors_correlation.png)
+*Correlation analysis of external economic factors*
+
+![External Factors Impact](stage2/outputs/visualizations/09_external_factors_impact.png)
+*Detailed impact analysis of external factors*
+
 ### Department Concentration
 
 - **Top 10 departments = 66% of total sales**
 - Power law distribution suggests focused forecasting
+
+![Top Departments](stage1/visualizations/Stage1.4/10_top_departments.png)
+*Sales concentration in top-performing departments*
+
+![Department Performance Heatmap](stage2/outputs/visualizations/07_department_performance_heatmap.png)
+*Heatmap showing department performance across stores*
 
 ---
 
