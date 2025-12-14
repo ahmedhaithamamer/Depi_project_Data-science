@@ -1,5 +1,15 @@
 # Walmart Sales Forecasting Project
 
+![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5%2B-orange.svg)
+![Streamlit](https://img.shields.io/badge/streamlit-1.28%2B-red.svg)
+![FastAPI](https://img.shields.io/badge/fastapi-0.100%2B-teal.svg)
+![Docker](https://img.shields.io/badge/docker-ready-2496ED.svg?logo=docker)
+![Status](https://img.shields.io/badge/status-production-brightgreen.svg)
+![R² Score](https://img.shields.io/badge/R²-0.9996-success.svg)
+![MAE](https://img.shields.io/badge/MAE-%24106.77-success.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
 **AI & Data Science Track - Round 3**  
 **Project Type:** Time Series Forecasting  
 **Dataset:** [Walmart Recruiting Store Sales Forecasting (Kaggle)](https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting)  
