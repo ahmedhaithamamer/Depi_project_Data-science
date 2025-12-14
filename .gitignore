@@ -8,6 +8,14 @@
 # JSON files (parameters, configs, outputs)
 *.json
 
+#docs files
+# *.docs
+# *.docx
+# *.doc
+
+
+
+
 # Excel files
 *.xlsx
 *.xls
@@ -48,7 +56,11 @@ saved_models/
 checkpoints/
 
 # Outputs and results
-outputs/
+# outputs/
+analysis_results/
+enhanced_features/
+
+
 results/
 predictions/
 
@@ -62,11 +74,11 @@ predictions/
 # figures/
 
 # Image files (if generated dynamically)
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
 
 
 # ============================================================================
@@ -374,7 +386,7 @@ credentials.py
 # ============================================================================
 
 # Stage 2 outputs (if you want to exclude them)
-stage2/outputs/
+
 
 # Notebook outputs
 # EDA_Analysis.ipynb
