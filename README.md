@@ -15,7 +15,7 @@
 - 🚀 **[Quick Start Guide](QUICK_START_GUIDE.md)** - Commands and examples
 - 📈 **[Final Report](stage5/Final_Report/Final_Project_Report.md)** - Complete 50+ page documentation
 - 🎤 **[Stakeholder Presentation](stage5/Presentation/Stakeholder_Presentation.md)** - 28-slide deck
-- 🎤 **[Project's Presentation](Presentation/Presentation/Project's_Presention.pdf)** - Summarizing everything done in the project
+- 🎤 **[Project's Presentation](Presentation/Project's_Presention.pdf)** - Summarizing everything done in the project
 ---
 
 ## Project Overview
