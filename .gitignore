@@ -9,11 +9,11 @@
 *.json
 
 #docs files
-# *.docs
-# *.docx
-# *.doc
-# *.pptx
-# *.ppt
+*.docs
+*.docx
+*.doc
+*.pptx
+*.ppt
 
 
 
