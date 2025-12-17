@@ -32,6 +32,9 @@
 
 This project develops a machine learning system to forecast weekly sales for Walmart stores across 45 locations and 99 departments. The goal is to predict future sales using historical data, store characteristics, external factors, and promotional activities.
 
+![Project Flowchart](Project's_flowchart.png)
+*End-to-end project stages from raw data to business impact*
+
 ### Business Objectives
 
 - **Inventory Optimization**: Prevent stockouts and overstocking
