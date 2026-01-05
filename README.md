@@ -977,14 +977,6 @@ For detailed implementation steps, code explanations, and complete analysis, see
 
 ---
 
-## 📧 Contact
-
-For questions or collaboration:
-- Project Repository: `D:\projects\Depi_project_Data-science`
-- Last Updated: October 23, 2025
-
----
-
 ## 📄 License & Usage
 
 This project is developed for **educational purposes** as part of the DEPI AI & Data Science Track.
